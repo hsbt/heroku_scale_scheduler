@@ -11,7 +11,7 @@ namespace :heroku do
     end
 
     desc 'scaling heroku process'
-    task :process do
+    task :ps do
       HerokuScaleScheduler::Client.new.run
     end
   end

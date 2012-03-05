@@ -13,9 +13,9 @@ module HerokuScaleScheduler
         when :workers then client.set_workers(config['app'], qty)
         end
       else
-        config.keys.each do |process|
-          if qty = config[process][run_at]
-            client.ps_scale(config['app'], :type => process, :qty => qty)
+        config.keys.each do |ps|
+          if qty = config[ps][run_at]
+            client.ps_scale(config['app'], :type => ps, :qty => qty)
           end
         end
       end
