@@ -4,8 +4,8 @@ require File.expand_path('../lib/heroku_scale_scheduler/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["SHIBATA Hiroshi"]
   gem.email         = ["shibata.hiroshi@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = "scaling scheduler for heroku dynos/workers"
+  gem.summary       = "heroku_scale_scheduler is simple scaling scheduler for heroku dynos/workers."
   gem.homepage      = ""
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
