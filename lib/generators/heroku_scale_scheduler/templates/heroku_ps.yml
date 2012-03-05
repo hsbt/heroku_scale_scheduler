@@ -1,0 +1,9 @@
+app: example_app
+
+dynos:
+  900: 2
+  2200: 1
+
+workers:
+  900: 1
+  2200: 0
