@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "heroku_scale_scheduler"
   gem.require_paths = ["lib"]
   gem.version       = HerokuScaleScheduler::VERSION
+
+  gem.add_dependency 'heroku', ['>= 0']
 end
