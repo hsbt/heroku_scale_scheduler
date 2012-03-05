@@ -1,5 +1,3 @@
-module HerokuScaleScheduler
-  class Railtie < Rails::Railtie
-    rake_tasks { load 'heroku_scale_scheduler/tasks/heroku_scale_scheduler.rake' }
-  end
-end
+require 'heroku_scale_scheduler/config'
+require 'heroku_scale_scheduler/client'
+require 'heroku_scale_scheduler/railtie'
