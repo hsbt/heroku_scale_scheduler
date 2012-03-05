@@ -1,9 +1,18 @@
 app: example_app
 
-dynos:
+# bomboo stack example
+# dynos:
+#   900: 2
+#   2200: 1
+
+# workers:
+#   900: 1
+#   2200: 0
+
+web:
   900: 2
   2200: 1
 
-workers:
+worker:
   900: 1
   2200: 0
