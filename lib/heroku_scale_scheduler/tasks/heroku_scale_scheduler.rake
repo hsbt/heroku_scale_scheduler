@@ -1,18 +1,19 @@
+client = HerokuScaleScheduler::Client.new
 namespace :heroku do
   namespace :scale do
     desc 'scaling heroku dynos'
     task :dynos do
-      HerokuScaleScheduler::Client.new.run(:dynos)
+      client.run(:dynos)
     end
 
     desc 'scaling heroku workers'
     task :workers do
-      HerokuScaleScheduler::Client.new.run(:workers)
+      client.run(:workers)
     end
 
     desc 'scaling heroku process'
     task :ps do
-      HerokuScaleScheduler::Client.new.run
+      client.run
     end
   end
 end
