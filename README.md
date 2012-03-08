@@ -22,7 +22,7 @@ Or install it yourself as:
 ```
 $ bundle exec rails g heroku_scale_scheduler:install
 ```
-2. write your scheduling configuration to config/heroku_ps.yml. **Notice: schedule time is must be 10 minutes periods, and write UTC time.**
+2. write your scheduling configuration to config/heroku_ps.yml. **Notice: schedule time is must be 10 minutes periods.**
 3. add Heroku scheduler addons.
 4. visit your Heroku scheduler dashboard, if you use bomboo stack added follow tasks
 <table>
