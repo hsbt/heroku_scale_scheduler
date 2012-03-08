@@ -1,19 +1,17 @@
-app: example_app
-
 # bomboo stack
-# dynos:
-#   900: 2
-#   2200: 1
-
-# workers:
-#   900: 1
-#   2200: 0
+# example_app:
+#   dynos:
+#     900: 2
+#     2200: 1
+#   workers:
+#     900: 1
+#     2200: 0
 
 # cedar stack
-web:
-  900: 2
-  2200: 1
-
-worker:
-  900: 1
-  2200: 0
+example_app:
+  web:
+    900: 2
+    2200: 1
+  worker:
+    900: 1
+    2200: 0
