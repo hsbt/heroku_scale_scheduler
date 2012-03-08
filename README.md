@@ -27,13 +27,13 @@ $ bundle exec rails g heroku_scale_scheduler:install
 4. visit your Heroku scheduler dashboard, if you use bomboo stack added follow tasks
 <table>
 <tr><th>TASK</th><th>FREQUENCY</th></tr>
-<tr><td>heroku:scale:dynos</td><td>Every 10 minutes</td></tr>
-<tr><td>heroku:scale:workers</td><td>Every 10 minutes</td></tr>
+<tr><td>rake heroku:scale:dynos</td><td>Every 10 minutes</td></tr>
+<tr><td>rake heroku:scale:workers</td><td>Every 10 minutes</td></tr>
 <table>
 or use cedar stack
 <table>
 <tr><th>TASK</th><th>FREQUENCY</th></tr>
-<tr><td>heroku:scale:ps</td><td>Every 10 minutes</td></tr>
+<tr><td>rake heroku:scale:ps</td><td>Every 10 minutes</td></tr>
 <table>
 5. add your heroku api key to Heroku env. example for
 ```
