@@ -2,9 +2,13 @@ require 'heroku/client'
 
 module HerokuScaleScheduler
   class Client
+    def config
+      path = Rails.root.join('config', 'heroku_ps.yml')
+      @config ||= File.exists?(path) ? YAML.load_file(path) : {}
+    end
+
     def run(type = :ps)
       client = Heroku::Client.new(*Heroku::Auth.read_credentials)
-      config = HerokuScaleScheduler::Config.read_config
       run_at = (Time.now.strftime('%H%M').to_i / 10) * 10
 
       config.keys.each do |app|
