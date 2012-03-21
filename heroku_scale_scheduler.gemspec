@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["shibata.hiroshi@gmail.com"]
   gem.description   = "scaling scheduler for heroku dynos/workers"
   gem.summary       = "heroku_scale_scheduler is simple scaling scheduler for heroku dynos/workers."
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/hsbt/heroku_scale_scheduler"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
