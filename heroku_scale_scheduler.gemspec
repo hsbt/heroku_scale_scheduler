@@ -15,6 +15,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = HerokuScaleScheduler::VERSION
 
-  gem.add_runtime_dependency 'heroku', ['>= 2']
+  gem.add_runtime_dependency 'heroku', ['>= 2.25.0']
   gem.add_runtime_dependency 'railties', ['>= 3.0']
 end
